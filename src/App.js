@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SyafrinaAzZahra from "./pages/SyafrinaAzZahra";
+import SalwaaAufaaNabila from "./pages/salwaa-aufaa-nabila";
+import AlfiRizqiRachmadina from "./pages/AlfiRizqiRachmadina";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/syafrina-az-zahra" element={<SyafrinaAzZahra />} />
+        <Route path="/salwaa-aufaa-nabila" element={<SalwaaAufaaNabila />} />
+        <Route path="/alfi-rizqi-rachmadina" element={<AlfiRizqiRachmadina />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
