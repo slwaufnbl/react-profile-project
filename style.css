@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: url('image/bg.jpg') no-repeat center;
+    background-size: cover;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 60%;
+}
+
+.overlay h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.tags span {
+    background: rgba(255,255,255,0.3);
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/* PROFILE */
+.profile {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.card {
+    width: 900px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header {
+    background: #3b82f6;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.left {
+    width: 30%;
+}
+
+.left img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.box {
+    margin-top: 15px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.right {
+    width: 70%;
+    padding-left: 20px;
+}
+
+.info, .about, .skills {
+    margin-bottom: 20px;
+}
